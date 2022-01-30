@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title on Tab</title>
+</head>
+<body>
+    <!--This is a comment-->
+    <!-- Control ? to create a comment automatically -->
+    <h1>This is a heading (h1)</h1>
+    <h2>This is a sub-heading (h2)</h2>
+    <h3>This is a variation sub-heading (h3)</h3>
+    <h4>Headings (h3 - h6) are all sub-headings with descending priority </h4>
+    <p>This is a paragraph (p)</p>    
+    <p>To add a break in a line add a (break tag) <br> this moves down a line</p>
+    <p>use lorem to create a fixed sentence to see what your paragraph will look like</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque sit earum possimus iure quae id exercitationem, iusto eos tempora, quibusdam a recusandae quidem. Animi recusandae voluptates at. Velit, quia.</p>
+    <p>A strong tag <strong>boldens</strong> what is written between the tags</p>
+    <p>The emphasis tag <em>italisizes</em> what is written</p>
+    <p>Mark is used to <mark>highlight</mark></p>
+    <p><small>Small</small> shrinks that text</p>
+    <p>Del can be used to <del>strike-through</del> text</p>
+    <p>Insert adds an <ins>underline</ins></p>
+    <div>
+        The div tag is a division element, it is used to seperate and identify groups of elemnets
+    </div>
+    <span>A span tag is used to define a section of a document in-line to identify particular text</span>
+    <hr> The hr tag is used to create a horizontal rule, creating a horizontal line<br>
+    <p title="this is a title">The title works as a tooltip, when the text is hovered over, the title will dispaly</p>
+    
+    <img src="html.png" alt="description for screen-reader" width="400">
+
+    <p>The anchor tag is used to create links, such as <a href="https://www.google.com">Google</a></p>
+    <p>Adding a target to the anchor tag allows where you want the link to be opened<br>
+    such as a <a href="https://www.google.com" target="_blank">new tab</a></p>
+
+    <p id="identifier">This paragraph has an id so it can be uniquely identified</p>
+
+    <ul> An unordered list uses bullet points
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+
+    <ol> An ordered list uses numbers by default
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+
+    <ol type="I">Roman numerals
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+
+    <ol type="A"> Or even letters
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+
+    <ul>Lists can be nested to have sub-lists as well
+        <li>Main List</li>
+        <ul>
+            <li>sub list</li>
+        </ul>
+    </ul>
+
+    <hr>
+
+    <table>
+        <caption>This caption can be used to add a title to a table</caption>
+        <thead> <!--table head is used to define first row-->
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody> <!--table body is for teh information that corresponds with the head-->
+            <tr>
+                <td>Troy</td>
+                <td>Dunbar</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Noelle</td>
+                <td>Dunbar</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>The figure above is defined as a table<br>
+    broken into its head where the headings are defined<br>
+    and the body where the table data is stored<br>
+    </p>
+
+    <hr>
+
+    <p>Forms allow you to submit data to a server without using external code</p>
+    <formm action = "server.php">  <!--The action is directed to the server-->
+        <fieldset>
+            <legend>Personal Information:</legend> <!--The legend is used to give a title to requested information-->
+            First Name<br>
+            <input type="text" name="firstname" value="" placeholder="First Name goes here"><br>
+            Last Name<br>
+            <input type="text" name="lastname" value=""><br>
+            <input type="radio" name="options">Option 1
+            <input type="radio" name="options" checked>Option 2 <!--The checked means this option is automatically selected-->
+            <input type="radio" name="options">Option 3
+            <br>
+            <input type="checkbox" name="checkbox" checked>Checkbox 1
+            <input type="checkbox" name="checkbox">Checkbox 2
+            <input type="checkbox" name="checkbox">Checkbox 3
+            <br>
+            <label for="selectTable">Select</label>
+            <select name="Selections" id="selectTables" multiple> <!--multiple allows for multiple selections to be made when holding ctrl-->
+                <option value="1" selected>Selection 1</option>
+                <option value="2">Selection 2</option>
+                <option value="3">Selection 3</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <button>I am a button</button>
+</body>
+</html>
